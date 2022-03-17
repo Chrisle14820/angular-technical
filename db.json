@@ -1,0 +1,23 @@
+{
+  "products": [{
+      "id": 495,
+      "brand": "maybelline",
+      "name": "Maybelline Face Studio Master Hi-Light Light Booster Bronzer",
+      "price": "14.99"
+
+    },
+    {
+      "id": 488,
+      "brand": "maybelline",
+      "name": "Maybelline Fit Me Bronzer",
+      "price": "10.29"
+    },
+    {
+      "id": 477,
+      "brand": "maybelline",
+      "name": "Maybelline Facestudio Master Contour Kit",
+      "price": "15.99"
+    }
+  ]
+
+}

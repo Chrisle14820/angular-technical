@@ -1,0 +1,15 @@
+.page {
+  padding-left: 20rem;
+  padding-top: 5rem;
+  padding-right: 2rem;
+}
+
+.filter,
+.items {
+  height: 5rem;
+  width: 100%;
+}
+
+.carousel {
+  width: 100%;
+}
