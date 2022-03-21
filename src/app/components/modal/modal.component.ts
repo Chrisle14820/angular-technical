@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Product } from '../../Product';
 
 @Component({
@@ -8,7 +9,8 @@ import { Product } from '../../Product';
 })
 export class ModalComponent implements OnInit {
   @Input() product: Product;
-  constructor() {}
+  element: any;
+  constructor(public activeModal: NgbActiveModal) {}
 
   ngOnInit(): void {}
   openLink() {

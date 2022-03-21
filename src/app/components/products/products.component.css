@@ -1,7 +1,9 @@
 .container {
   font-family: 'Poppins', sans-serif;
+  padding-top: 15rem;
+  max-width: 100rem;
 }
 
-.col-4 {
+.col-3 {
   padding-bottom: 1rem;
 }

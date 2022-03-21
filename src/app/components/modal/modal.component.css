@@ -2,13 +2,38 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
 }
 
 .modal-name {
-  text-align: center;
+  font-size: 34px;
 }
 
 .modal-whole {
   font-family: 'Poppins', sans-serif;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  color: #d3d3d3;
+}
+
+.full {
+  color: gold;
+
+}
+
+.half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color: gold;
+}
+
+.btn-primary {
+  background-color: black;
+  border-color: black;
+  width: 100%;
 }

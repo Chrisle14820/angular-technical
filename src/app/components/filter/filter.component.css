@@ -2,10 +2,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-#price-range {
-  padding-left: 1rem;
-}
-
 #product-type {
   padding-left: 1rem;
 }
@@ -17,4 +13,21 @@
 .dropdown-menu {
   padding-left: 1rem;
   border-radius: 0.25rem;
+}
+
+.btn-primary {
+  background-color: black;
+  border-color: black;
+}
+
+img {
+  width: 99.5%;
+  padding-bottom: 1rem;
+}
+
+.banner-title {
+  position: absolute;
+  top: 14%;
+  left: 17%;
+  color: black;
 }

@@ -1,13 +1,23 @@
-<div class="modal-whole">
-  <img class="modal-img" [src]="product.image_link" />
-  <div class="modal-body">
-    <div class="modal-name"><b><u>{{product.name}}</u></b></div>
-    <br>
-    <div class="modal-desc">{{product.description}}</div>
-    <br>
-    <div class="modal-rate">Rating: {{product.rating}}&#11088;</div>
-    <div class="modal-price">Price: ${{product.price}}</div>
-    <button class="btn btn-med btn-primary" (click)="openLink()">Buy Now</button>
-    <br>
+<div class="modal-dialog">
+  <div class="container col-md-30">
+    <div class="row">
+      <div class="col">
+        <img class="modal-img" [src]="product.image_link" />
+      </div>
+      <div class="col">
+        <ng-template #t let-fill="fill">
+          <span class="star" [class.full]="fill === 100">
+            <span class="half" [style.width.%]="fill">&#9733;</span>&#9733;
+          </span>
+        </ng-template>
+        <ngb-rating [(rate)]="product.rating" [starTemplate]="t"></ngb-rating>
+        <div class="modal-name"><b>{{product.name}}</b></div>
+        <div class="modal-price"><b>${{product.price}}</b></div>
+        <br>
+        <div class="modal-desc">{{product.description}}</div>
+      </div>
+    </div>
   </div>
+  <br>
+  <button class="btn btn-med btn-primary" (click)="openLink()">Buy Now</button>
 </div>

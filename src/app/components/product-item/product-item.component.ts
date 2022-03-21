@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../../Product';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from '../modal/modal.component';
 
 @Component({
@@ -10,7 +10,10 @@ import { ModalComponent } from '../modal/modal.component';
 })
 export class ProductItemComponent implements OnInit {
   @Input() product: Product;
-  constructor(private modalService: NgbModal) {}
+  constructor(private modalService: NgbModal, config: NgbRatingConfig) {
+    config.max = 5;
+    config.readonly = true;
+  }
 
   ngOnInit(): void {}
   open() {
