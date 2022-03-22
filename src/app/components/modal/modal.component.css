@@ -37,3 +37,13 @@
   border-color: black;
   width: 100%;
 }
+
+p {
+  position: absolute;
+  margin: -33px 0 0 140px;
+  opacity: 80%;
+}
+
+.desc {
+  padding-top: 6rem;
+}

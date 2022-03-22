@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Product } from '../../Product';
 
 @Component({
@@ -10,10 +10,17 @@ import { Product } from '../../Product';
 export class ModalComponent implements OnInit {
   @Input() product: Product;
   element: any;
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor(public activeModal: NgbActiveModal, modalService: NgbModal) {}
 
   ngOnInit(): void {}
   openLink() {
     window.open(this.product.product_link);
+  }
+  showRating(): string {
+    var rating: string = '0';
+    if (this.product.rating) {
+      rating = this.product.rating.toString();
+    }
+    return rating;
   }
 }

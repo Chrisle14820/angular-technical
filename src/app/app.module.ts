@@ -9,7 +9,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from './components/modal/modal.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FilterComponent } from './components/filter/filter.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     ModalComponent,
     HeaderComponent,
     FilterComponent,
-    CarouselComponent,
   ],
   imports: [BrowserModule, FormsModule, NgbModule],
   bootstrap: [AppComponent],

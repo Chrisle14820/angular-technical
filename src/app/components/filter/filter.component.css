@@ -27,7 +27,6 @@ img {
 
 .banner-title {
   position: absolute;
-  top: 14%;
-  left: 17%;
+  margin: -150px 0 0 70px;
   color: black;
 }

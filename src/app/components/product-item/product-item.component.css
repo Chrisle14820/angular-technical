@@ -51,3 +51,9 @@
 .app-modal {
   width: 50%;
 }
+
+p {
+  position: absolute;
+  margin: -33px 0 0 140px;
+  opacity: 80%;
+}

@@ -20,4 +20,11 @@ export class ProductItemComponent implements OnInit {
     const modalRef = this.modalService.open(ModalComponent);
     modalRef.componentInstance.product = this.product;
   }
+  showRating(): string {
+    var rating: string = '0';
+    if (this.product.rating) {
+      rating = this.product.rating.toString();
+    }
+    return rating;
+  }
 }

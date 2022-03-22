@@ -9,6 +9,7 @@
       </span>
     </ng-template>
     <ngb-rating [(rate)]="product.rating" [starTemplate]="t"></ngb-rating>
+    <p>{{showRating()}}</p>
     <div class="card-price">Price: ${{product.price}}</div>
     <div class="d-flex justify-content-between align-items-center">
       <div class="btn-group">
